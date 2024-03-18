@@ -1,5 +1,5 @@
-import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import styles from "@/styles/layout.module.css";
 
 export default function QueueLayout({ children }) {
   return (
@@ -7,15 +7,16 @@ export default function QueueLayout({ children }) {
       <head>
         <title>Sistem @ Antrian</title>
         <meta name="description" content="Create with ❤️ by @bariskodeid" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body>
+      <body className={styles.body}>
         <header>
           <Navbar title="Sistem Antrian" />
         </header>
-        <main>
+        <main className={styles.main}>
           {children}
         </main>
-        <Footer title="Sistem Antrian" />
+        {/* <Footer title="Sistem Antrian" /> */}
       </body>
     </html>
   )

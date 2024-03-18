@@ -1,18 +1,13 @@
 export default function Footer({ title }) {
   return (
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Sistem Antrian</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+    <footer className="page-footer" style={{ paddingTop: 0 }}>
+      <div className="footer-copyright">
+        <div className="container">
+          <div className="row" style={{marginBottom: 0}}>
+            <div className="col s12 m12 l12" style={{fontSize: 26}}>
+              <marquee behavior="scroll" direction="left">© 2024 Baris Kode ID</marquee>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-          © 2024 Baris Kode ID
-          <a class="grey-text text-lighten-4 right" href="#!">Find Us</a>
         </div>
       </div>
     </footer>

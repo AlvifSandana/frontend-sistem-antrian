@@ -1,0 +1,29 @@
+/* @media query untuk printer termal 58mm */
+@media print {
+  @page {
+    size: 58mm;
+  }
+  
+  body {
+    font-size: 10pt; /* Ukuran font utama */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 12pt; /* Ukuran judul */
+    margin-bottom: 6px; /* Jarak antara judul dan elemen lainnya */
+  }
+
+  p {
+    font-size: 10pt; /* Ukuran paragraf */
+    margin-bottom: 4px; /* Jarak antara paragraf */
+  }
+
+  ul, ol {
+    font-size: 10pt; /* Ukuran daftar */
+    margin-bottom: 4px; /* Jarak antara daftar */
+  }
+
+  table {
+    margin-bottom: 6px; /* Jarak antara tabel */
+  }
+}
